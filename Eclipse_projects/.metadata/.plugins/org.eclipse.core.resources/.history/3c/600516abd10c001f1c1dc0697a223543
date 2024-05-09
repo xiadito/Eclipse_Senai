@@ -1,0 +1,28 @@
+package controller;
+
+import util.Teclado;
+
+public class Exercicios {
+	
+	public static void soma() {
+		// TODO Auto-generated method stub
+		int x = Teclado.lerInt("Digite um número inteiro:");
+		int y = Teclado.lerInt("Digite um número inteiro:");
+		int soma = x + y;
+		int sub = x - y;
+		int mult = x * y;
+		int div = DoubleWrapper.valueOf(x / y);
+			
+		System.out.println("A soma dos números: " + soma + ".");
+		System.out.println("A subtração dos números: " + sub + ".");
+		System.out.println("A multiplicação dos números: " + mult + ".");
+		System.out.println("A divisão dos números: " + div + ".");
+	}
+	
+	
+	
+	public static void main(String[] args) {
+	}
+
+}
+

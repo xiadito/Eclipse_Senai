@@ -1,0 +1,66 @@
+package controller;
+
+import util.Teclado;
+
+public class Exercicios {
+	
+	public static void aaskdba() {
+		
+	}
+	
+	public static void soma() {
+		// TODO Auto-generated method stub
+		int x = Teclado.lerInt("Digite um número inteiro:");
+		int y = Teclado.lerInt("Digite um número inteiro:");
+		int soma = x + y;
+		int sub = x - y;
+		int mult = x * y;
+		double div = (1.0 * x) / (1.0 * y);
+			
+		System.out.println("A soma dos números: " + soma + ".");
+		System.out.println("A subtração dos números: " + sub + ".");
+		System.out.println("A multiplicação dos números: " + mult + ".");
+		System.out.println("A divisão dos números: " + div + ".");
+	}
+	
+	
+	public static void exercicio1() {
+		
+		String name = Teclado.lerTexto("Digite seu nome completo:");
+		String sex = Teclado.lerTexto("Digite seu sexo: M/F");
+		
+		System.out.println(name);
+		System.out.println(sex);
+	}
+	
+	public static void exercicio2() {
+		// TODO Auto-generated method stub
+		
+		int[] number = new int[4];
+		int sum = 0;
+		int multiplication = 0;
+		
+		
+		for (int i = 0; i < 4; i++)
+		{
+			number[i] =  Teclado.lerInt("Digite um número inteiro: ");
+		}
+		
+		for (int i = 0; i < 4; i++) 
+		{
+			sum = sum + number[i];
+			multiplication = multiplication * number[i];
+		}
+		
+		System.out.println("Soma dos 4 inteiros: " + sum);
+		System.out.println("Multiplicação dos 4 inteiros: " +  multiplication);
+	}
+	
+
+		
+	public static void main(String[] args) {
+		Exercicios.exercicio2();
+	}
+
+}
+
