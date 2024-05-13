@@ -4,12 +4,6 @@ import util.Teclado;
 
 public class Exercicios {
 	
-	private static double fahrenheit;
-
-	public static void aaskdba() {
-		
-	}
-	
 	public static void soma() 
 	{
 		// TODO Auto-generated method stub
@@ -25,7 +19,6 @@ public class Exercicios {
 		System.out.println("A multiplicação dos números: " + mult + ".");
 		System.out.println("A divisão dos números: " + div + ".");
 	}
-	
 	
 	public static void exercicio1() 
 	{
@@ -107,9 +100,9 @@ public class Exercicios {
 		
 		fahrenheit = Teclado.lerDouble("Digite uma temperatura em fahrenheit:");
 		
-		celsius = (f-32) * 5/9
+		celsius = (fahrenheit-32) * 5/9;
 		
-	
+		System.out.println("A temperatura " + fahrenheit + " é " + celsius + " em celsius.");
 	}
 	
 	public static void main(String[] args) 

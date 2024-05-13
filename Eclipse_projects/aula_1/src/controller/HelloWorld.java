@@ -1,7 +1,5 @@
 package controller;
 
-import util.Teclado;
-
 public class HelloWorld {
 
 	public static void main(String[] args) {
