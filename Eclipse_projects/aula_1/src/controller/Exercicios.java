@@ -4,22 +4,6 @@ import util.Teclado;
 
 public class Exercicios {
 	
-	public static void soma() 
-	{
-		// TODO Auto-generated method stub
-		int x = Teclado.lerInt("Digite um número inteiro:");
-		int y = Teclado.lerInt("Digite um número inteiro:");
-		int soma = x + y;
-		int sub = x - y;
-		int mult = x * y;
-		double div = (1.0 * x) / (1.0 * y);
-			
-		System.out.println("A soma dos números: " + soma + ".");
-		System.out.println("A subtração dos números: " + sub + ".");
-		System.out.println("A multiplicação dos números: " + mult + ".");
-		System.out.println("A divisão dos números: " + div + ".");
-	}
-	
 	public static void exercicio1() 
 	{
 		
@@ -103,6 +87,30 @@ public class Exercicios {
 		celsius = (fahrenheit-32) * 5/9;
 		
 		System.out.println("A temperatura " + fahrenheit + " é " + celsius + " em celsius.");
+	}
+	
+	public static void exercicios7()
+	{
+		double[] notas = new double[3];
+		double media = 0;
+		
+		for (int i = 0; i < notas.length; i++)
+		{
+			notas[i] = Teclado.lerInt("Digite as notas do aluno:");
+			media = media + notas[i];
+		}
+		
+		media = media / 4;
+		
+		System.out.println("A média aritmetica entre os numeros apresentados é: " + media + ".");
+		
+	}
+	
+	public static void exercicio8()
+	{
+		double lit = Teclado.lerDouble("Digite o consumo do carro por KM:");
+		
+		
 	}
 	
 	public static void main(String[] args) 

@@ -158,6 +158,7 @@ public class Exercicios2 {
 		double percentual_nulos = (double) votos_nulos / total_votos * 100;
 		double percentual_validos = (double) votos_validos / total_votos * 100;
 		
+		System.out.println("Total de eleitores: " + total_eleitores + ".");
 		System.out.println("Percentual de votos brancos: " + percentual_brancos + "%");
         System.out.println("Percentual de votos nulos: " + percentual_nulos + "%");
         System.out.println("Percentual de votos válidos: " + percentual_validos + "%");

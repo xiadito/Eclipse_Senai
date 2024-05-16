@@ -171,7 +171,7 @@ public class Exercicios3 {
 	public static void exercicio11()
 	{
 		String name = Teclado.lerTexto("Digite um número de 3 casas:");
-		name = name.substring(2, 3);
+		name = name.substring(0, 1);
 		System.out.println(name);
 	}
 	
