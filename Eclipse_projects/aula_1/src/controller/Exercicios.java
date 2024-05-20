@@ -16,8 +16,6 @@ public class Exercicios {
 	
 	public static void exercicio2() 
 	{
-		// TODO Auto-generated method stub
-		
 		//criando uma array com tamanho de 4 valores
 		int[] number = new int[4];
 		int sum = 0;
@@ -103,13 +101,6 @@ public class Exercicios {
 		media = media / 4;
 		
 		System.out.println("A média aritmetica entre os numeros apresentados é: " + media + ".");
-		
-	}
-	
-	public static void exercicio8()
-	{
-		double lit = Teclado.lerDouble("Digite o consumo do carro por KM:");
-		
 		
 	}
 	

@@ -92,11 +92,81 @@ public class Exercicios
 		}		
 	}
 	
+	public static void exercicio10()
+	{
+		for (int i = 0; i < 16; i++)
+		{
+			int resultado = (int) Math.pow(3, i);
+			System.out.println("3 elevado a " + i + " = " + resultado);
+		}
+	}
 	
+	public static void exercicio11()
+	{
+		int b = Teclado.lerInt("Digite o valor da base da potencia:");
+		int e = Teclado.lerInt("Digite o valor do expoente da potência:");
+		int result = b;
+
+		for (int i = 1; i < e; i++)
+		{
+			result *= b;
+		}
+		System.out.println(result);
+	}
 	
+	public static void exercicio12()
+	{	
+		float result = 0;
+		boolean x = true;
+
+		while (x)
+		{
+			float aws = Teclado.lerFloat("Digite qualquer número real:");
+			
+			if (aws < 0)
+			{
+				System.out.println(result);
+				x = false;
+			}
+			else
+			{
+				result += aws;
+			}
+		}
+	}
+
+	public static void exercicio13()
+	{
+		for (int i = 0; i <= 10; i++)
+		{
+			System.out.println(3*i);
+		}
+		for (int i = 0; i <= 10; i++)
+		{
+			System.out.println(6*i);
+		}
+	}
+
+	public static void exercicio14()
+	{
+		int fatorial = Teclado.lerInt("Digite o nome que deseja ver o fatorial:");
+		int soma_fat = 1;
+
+		for (int i = 1; i <= fatorial; i++)
+		{
+			soma_fat *= i;
+		}
+		System.out.println(soma_fat);
+	}
+
+	public static void exercicio15()
+	{
+
+	}
+
 	public static void main(String[] args) 
 	{
-		Exercicios.exercicio8();
+	
 	}
 
 }
