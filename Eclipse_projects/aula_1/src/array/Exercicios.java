@@ -84,7 +84,12 @@ public class Exercicios {
             System.out.println(b[i]);
         }
     }
-    
+
+    void exercicio6() {
+
+        
+    }
+
     public static void main(String[] args) {
         
 	}
