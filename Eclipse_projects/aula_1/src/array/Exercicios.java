@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 import util.Teclado;
@@ -216,7 +218,77 @@ public class Exercicios {
         }
             
     }
+
+    static void exercicio12() {
+        int[] a = new int[5];
+        int[] b = new int[5];
+
+        for (int i = 0; i < a.length; i++) {
+            a[i] = Teclado.lerInt("Digite um valor para ser inserido na array a:");
+            b[i] = Teclado.lerInt("Digite um valor para ser inserido na array b:");
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
+                if (a[i] == b[j]) { System.out.println("a: " + a[i] + "| b: " + b[j] ); }
+            }
+        }
+    }
+
+    static void exercicio13() {
+        String[] name = new String[2];
+        double[] salary = new double[2];
+
+        for (int i = 0; i < name.length; i++) {
+            name[i] = Teclado.lerTexto("Digite o nome da pessoa:");
+            salary[i] = Teclado.lerDouble("Digite o salario da pessoa:");
+        }
+
+        for (int i = 0; i < salary.length; i++) {
+            salary[i] = salary[i] + (salary[i] * 0.18);
+        }
+    }
+
+    static void exercicio14() {
+        int[] fatorial = new int[5];
+		int[] soma_fat = new int[5];
+
+        for (int i = 0; i < soma_fat.length; i++) { soma_fat[i] = 1; }
+        
+        for (int i = 0; i < fatorial.length; i++) {
+            fatorial[i] = Teclado.lerInt("Digite o nome que deseja ver o fatorial:");
+            
+            for (int j = 1; j <= fatorial[i]; j++) {
+                soma_fat[i] *= j;
+            }
+        }
+        
+		for (int i = 0; i < soma_fat.length; i++) {System.out.println(soma_fat[i]);}
+	}
+
+    static void exercicio15() {        
+        // Vetor a com 5 elementos inteiros
+        Integer[] a = new Integer[5];
+        
+        // Lendo os elementos do vetor a
+        System.out.println("Digite 5 números inteiros:");
+        for (int i = 0; i < a.length; i++) {
+            a[i] = Teclado.lerInt("");
+        }
+        
+        // Construindo o vetor b com os mesmos elementos de a
+        Integer[] b = Arrays.copyOf(a, a.length);
+        
+        // Ordenando o vetor b em ordem decrescente
+        Arrays.sort(b, Collections.reverseOrder());
+        
+        // Exibindo o vetor b ordenado de forma decrescente
+        System.out.println("Vetor b ordenado de forma decrescente:");
+        for (int i = 0; i < b.length; i++) {
+            System.out.print(b[i] + " ");
+        }
     
+    }
 
     public static void main(String[] args) {
         
